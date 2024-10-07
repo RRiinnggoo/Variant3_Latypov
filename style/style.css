@@ -7,6 +7,7 @@
   gap: 30px;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 
 }
 .block{
@@ -45,6 +46,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .block_feture{
   width: 329px;
@@ -95,4 +97,53 @@ font-size: 16px;
   font-weight: 500;
   font-size: 14px;
   line-height: 143%;
+}
+.button_flex{
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width:416px) {
+  nav{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  nav a{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 150%;
+  }
+  .login{
+    display: none;
+
+  }
+  .adaptive{
+    display: none;
+  }
+  header span{
+    margin: 0;
+    padding: 0;
+  }
+
+  .adaptive_bg{
+    background-position:40%;
+  }
+  .adaptive_h1{
+    font-weight: 100 !important;
+    font-size: 40px !important;
+    line-height: 142%!important;
+  }
+  .adaptive_p{
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 150% !important;
+  }
+  .reviews{
+    flex-wrap: wrap;
+  }
+  .fetures{
+    flex-wrap: wrap;
+  }
 }
